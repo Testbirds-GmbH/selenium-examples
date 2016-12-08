@@ -1,0 +1,13 @@
+**/.cache
+**/.cache-main
+**/.cache-tests
+**/.classpath
+**/.directory
+**/.history
+**/.metadata/
+**/.project
+**/.recommenders
+**/.ruleset
+**/.settings/
+**/bin/
+**/target/
