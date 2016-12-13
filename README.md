@@ -10,7 +10,10 @@ To be able to run any of these examples out of the box, TestChameleon™ Seleniu
 
 The examples are structured according to the used programming language and test framework, i.e. see the subfolder `java/junit/` for an example in Java, that uses the JUnit unit testing framework.
 
----
+## License
+
+These examples are published under the Apache License, Version 2.0.
+You can find the license text in the LICENSE file and on http://www.apache.org/licenses/LICENSE-2.0.
 
 ## Official Documentation
 

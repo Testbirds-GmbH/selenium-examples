@@ -11,3 +11,10 @@
 **/.settings/
 **/bin/
 **/target/
+**/.gradle/
+**/build/
+**/vendor/
+**/composer.lock
+**/composer.phar
+**/reports/
+Gemfile.lock
