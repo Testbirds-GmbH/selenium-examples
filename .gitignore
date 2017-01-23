@@ -17,4 +17,7 @@
 **/composer.lock
 **/composer.phar
 **/reports/
+**/__pycache__/
+**/.cache/
 Gemfile.lock
+test_results.xml

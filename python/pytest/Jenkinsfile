@@ -15,14 +15,11 @@
  * limitations under the License.
  */
 
-stage('PHP Tests') {
-	dir('php/phpunit') {
-		sh 'mkdir target'
-		sh 'wget https://getcomposer.org/installer -O /proc/self/fd/1 | php'
-		sh 'php composer.phar install --prefer-dist --optimize-autoloader'
-		sh 'vendor/bin/phpunit test/SimpleExampleTest.php --log-junit target/junit.xml || true'
-		sh 'vendor/bin/pdepend --jdepend-xml=target/jdepend.xml test/SimpleExampleTest.php || true'
-		junit keepLongStdio: true, allowEmptyResults: true, testResults: 'target/junit.xml'
-		// TODO: jdepend is not pipeline compatible
+stage('Python pytest Tests') {
+	dir('python/pytest') {
+		sh 'virtualenv -p /usr/bin/python3 venv'
+		sh 'source venv/bin/activate && pip install -r requirements.txt'
+		sh 'source venv/bin/activate && pytest --junit-xml=test_results.xml test || true'
+		junit keepLongStdio: true, allowEmptyResults: true, testResults: 'test_results.xml'
 	}
 }

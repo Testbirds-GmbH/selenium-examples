@@ -19,6 +19,6 @@ stage('Ruby test-unit Tests') {
 	dir('ruby/test-unit') {
 		sh 'bundle'
 		sh '~/bin/rake || true'
-		junit allowEmptyResults: true, testResults: 'test/reports/**.xml'
+		junit keepLongStdio: true, allowEmptyResults: true, testResults: 'test/reports/**.xml'
 	}
 }
