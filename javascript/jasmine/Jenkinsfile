@@ -1,0 +1,11 @@
+#!groovy
+stage('JS Jasmine Tests') {
+	def nodeJS = tool 'NodeJS'
+	dir('javascript/jasmine') {
+		withEnv(["PATH+NODEJS=${nodeJS}/bin"]) {
+			sh 'npm install'
+			sh 'npm run test'
+			junit keepLongStdio: true, allowEmptyResults: true, testResults: 'reports/TEST-basictest.xml'
+		}
+	}
+}

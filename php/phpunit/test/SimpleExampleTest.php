@@ -30,13 +30,11 @@ class SimpleExampleTest extends PHPUnit_Framework_TestCase {
 	 */
 	public function setUp()
 	{
-		// use capabilities to specifiy OS, software packages and browser
-		$tech_os = '{"family":"WIN", "version":"6.1 SP1", "arch":"X86"}';
-		$tech_software ='[{"name":"chrome","version":"","arch":""}]';
+		// Use capabilities to specifiy platform and browser
+		// For more advanced options use tech_os and tech_software capabilities
 		$capabilities = array(
 			\WebDriverCapabilityType::BROWSER_NAME => 'chrome',
-			'tech_os' => $tech_os,
-			'tech_software' => $tech_software
+			'platform' => 'WIN10'
 		);
 
 		// higher timeout due to time required for starting the VM

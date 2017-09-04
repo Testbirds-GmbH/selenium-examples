@@ -6,8 +6,8 @@ This folder contains an example Java project that uses Selenium and JUnit to per
 
 To be able to execute these examples you need 
 
-* the JDK (version 7 or newer)
-* and Maven
+* JDK (version 7 or newer)
+* Maven 3
 
 as well as a running instance of TestChameleon™ Selenium (simply follow [this setup](https://confluence.testbirds.com/display/TED/Setup)).
 

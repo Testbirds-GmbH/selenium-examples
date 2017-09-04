@@ -17,6 +17,8 @@ as well as a running instance of TestChameleon™ Selenium (simply follow [this 
 Navigate into the folder and run
 
 ```
+sudo apt-get install php-xml
+sudo apt-get install php-curl
 wget https://getcomposer.org/installer
 php installer
 php composer.phar install

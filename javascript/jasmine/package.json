@@ -1,0 +1,18 @@
+{
+  "name": "selenium-javascript-example",
+  "description": "This is an example for running an automated test via TeCh Proxy in Javascript",
+  "scripts": {
+    "test": "jasmine-node --junitreport --captureExceptions ."
+  },
+  "keywords": [
+    "Javascript",
+    "WebDriver",
+    "Example"
+  ],
+  "author": "Julian Hainzlschmid",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine-node": "^1.14.5",
+    "selenium-webdriver": "^3.5.0"
+  }
+}
